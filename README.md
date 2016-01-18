@@ -1,4 +1,4 @@
-# GoGameServer
+# GoServerDaemon
 
 ###介绍
 
