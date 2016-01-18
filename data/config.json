@@ -1,0 +1,72 @@
+{
+  "debug" : true,
+  "daemon_log" : "daemon.log",
+  "loopTime_process" : 120,
+  "loopTime_cpu" : 120,
+  "loopTime_mem" : 120,
+  "loopTime_log" : 300,
+  "send_mail_user" : "xxxx@163.com",
+  "send_mail_pwd" : "xxxx",
+  "send_mail_host" : "smtp.163.com:25",
+  "receive_mail_list" : "4607384@qq.com;yangsong@egret.com",
+  "server_name" : "太极1服",
+  "servers" : [
+    {
+      "flag" : "LogServer",
+      "user" : "egret",
+      "restart_script": "restart.sh"
+    },
+    {
+      "flag" : "DBServer",
+      "user" : "egret",
+      "restart_script": "restart.sh"
+    },
+    {
+      "flag" : "GateServer",
+      "user" : "egret",
+      "restart_script": "restart.sh"
+    },
+    {
+      "flag" : "LoginServer",
+      "user" : "egret",
+      "restart_script": "restart.sh"
+    },
+    {
+      "flag" : "WorldServer",
+      "user" : "egret",
+      "restart_script": "restart.sh"
+    },
+    {
+      "flag" : "GameServer -s=1",
+      "user" : "egret",
+      "restart_script": "restart.sh"
+    },
+    {
+      "flag" : "GameServer -s=2",
+      "user" : "egret",
+      "restart_script": "restart.sh"
+    },
+    {
+      "flag" : "GameServer -s=3",
+      "user" : "egret",
+      "restart_script": "restart.sh"
+    },
+    {
+      "flag" : "redis-server",
+      "user" : "egret",
+      "restart_script": ""
+    },
+    {
+      "flag" : "mysqld",
+      "user" : "_mysql",
+      "restart_script": ""
+    }
+  ],
+  "logs_path" : "/Users/egret/Documents/taiji/log/",
+  "logs_keywords" : [
+    {
+      "key" : "queue is full! ",
+      "restart_script": "restart.sh"
+    }
+  ]
+}
