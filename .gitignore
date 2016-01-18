@@ -3,4 +3,4 @@
 bin/
 DaemonServer
 pkg
-
+*.log
