@@ -1,6 +1,5 @@
 
 .idea/
 bin/
-DaemonServer
 pkg
 *.log
